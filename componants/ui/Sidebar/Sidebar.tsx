@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import {LucideSettings2, LucideUsers2,} from "lucide-react";
+import {BarChart3, DollarSign, LucideSettings2, LucideUsers2, Package, Truck,} from "lucide-react";
 
 function Settings(props: { className: string }) {
     return null;
@@ -86,9 +86,9 @@ export default function Sidebar() {
                         font-bold
                         text-2xl
                         ">
-                            <h1>Dashbord</h1>
+                            <h1>Dashboard</h1>
                         </li>
-                        {/* Settings icon */}
+                        {/* Sales icon */}
                         <li className="
                         cursor-pointer
                         bg-linear-to-r
@@ -99,6 +99,171 @@ export default function Sidebar() {
                         p-2
                         rounded-lg
                         ">
+                            <button className="
+                            cursor-pointer
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <DollarSign className="
+                                cursor-pointer
+                                w-10
+                                h-auto
+                                text-blue-200
+                                hover:animate-bounce
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                    Sales
+                                </span>
+                            </button>
+                        </li>
+                        {/* Inventory icon */}
+                        <li className="
+                        cursor-pointer
+                        bg-linear-to-r
+                      from-red-500
+                      to-red-900
+                      hover:from-red-900
+                      hover:to-red-500
+                        p-2
+                        rounded-lg
+                        ">
+                            <button className="
+                            cursor-pointer
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <Package className="
+                                cursor-pointer
+                                w-10
+                                h-auto
+                              text-blue-200
+                                hover:animate-bounce
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                    Inventory
+                                </span>
+                            </button>
+                        </li>
+                        {/* Suppliers icon */}
+                        <li className="
+                            cursor-pointer
+                            bg-linear-to-r
+                          from-red-500
+                          to-red-900
+                          hover:from-red-900
+                          hover:to-red-500
+                            p-2
+                            rounded-lg
+                            ">
+                            <button className="
+                            cursor-pointer
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <Truck className="
+                                cursor-pointer
+                                w-10
+                                h-auto
+                              text-blue-200
+                                hover:animate-bounce
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                     Suppliers
+                                </span>
+                            </button>
+                        </li>
+                        {/* Customers icon */}
+                        <li className="
+                            cursor-pointer
+                            bg-linear-to-r
+                          from-red-500
+                          to-red-900
+                          hover:from-red-900
+                          hover:to-red-500
+                            p-2
+                            rounded-lg
+                            ">
+                            <button className="
+                            cursor-pointer
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <LucideUsers2 className="
+                                cursor-pointer
+                                w-10
+                                h-auto
+                              text-blue-200
+                                hover:animate-bounce
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                    Customers
+                                </span>
+                            </button>
+                        </li>
+                        {/* Reports icon */}
+                        <li className="
+                            cursor-pointer
+                            bg-linear-to-r
+                          from-red-500
+                          to-red-900
+                          hover:from-red-900
+                          hover:to-red-500
+                            p-2
+                            rounded-lg
+                            ">
+                            <button className="
+                            cursor-pointer
+                            flex
+                            item-center
+                            gap-2
+                            p-2
+                            rounded
+                            ">
+                                <BarChart3 className="
+                                cursor-pointer
+                                w-10
+                                h-auto
+                              text-blue-200
+                                hover:animate-bounce
+                                "/>
+                                <span className="
+                                p-2
+                                ">
+                                    Reports
+                                </span>
+                            </button>
+                        </li>
+                        {/* Settings icon */}
+                        <li className="
+                            cursor-pointer
+                            bg-linear-to-r
+                          from-red-500
+                          to-red-900
+                          hover:from-red-900
+                          hover:to-red-500
+                            p-2
+                            rounded-lg
+                            ">
                             <button className="
                             cursor-pointer
                             flex
@@ -111,244 +276,13 @@ export default function Sidebar() {
                                 cursor-pointer
                                 w-10
                                 h-auto
-                                text-blue-200
+                              text-blue-200
                                 hover:animate-bounce
                                 "/>
                                 <span className="
                                 p-2
                                 ">
                                     Settings
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                        cursor-pointer
-                        bg-linear-to-r
-                      from-red-500
-                      to-red-900
-                      hover:from-red-900
-                      hover:to-red-500
-                        p-2
-                        rounded-lg
-                        ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                            cursor-pointer
-                            bg-linear-to-r
-                          from-red-500
-                          to-red-900
-                          hover:from-red-900
-                          hover:to-red-500
-                            p-2
-                            rounded-lg
-                            ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                            cursor-pointer
-                            bg-linear-to-r
-                          from-red-500
-                          to-red-900
-                          hover:from-red-900
-                          hover:to-red-500
-                            p-2
-                            rounded-lg
-                            ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                            cursor-pointer
-                            bg-linear-to-r
-                          from-red-500
-                          to-red-900
-                          hover:from-red-900
-                          hover:to-red-500
-                            p-2
-                            rounded-lg
-                            ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                            cursor-pointer
-                            bg-linear-to-r
-                          from-red-500
-                          to-red-900
-                          hover:from-red-900
-                          hover:to-red-500
-                            p-2
-                            rounded-lg
-                            ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                            cursor-pointer
-                            bg-linear-to-r
-                          from-red-500
-                          to-red-900
-                          hover:from-red-900
-                          hover:to-red-500
-                            p-2
-                            rounded-lg
-                            ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
-                                </span>
-                            </button>
-                        </li>
-                        {/* Accounts icon */}
-                        <li className="
-                            cursor-pointer
-                            bg-linear-to-r
-                          from-red-500
-                          to-red-900
-                          hover:from-red-900
-                          hover:to-red-500
-                            p-2
-                            rounded-lg
-                            ">
-                            <button className="
-                            cursor-pointer
-                            flex
-                            item-center
-                            gap-2
-                            p-2
-                            rounded
-                            ">
-                                <LucideUsers2 className="
-                                cursor-pointer
-                                w-10
-                                h-auto
-                              text-blue-200
-                                hover:animate-bounce
-                                "/>
-                                <span className="
-                                p-2
-                                ">
-                                    Accounts
                                 </span>
                             </button>
                         </li>
